@@ -1,0 +1,63 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color:  #1f3869;
+    font-weight: 600;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
+
+.navbarLinks{
+  display: flex;
+  position: absolute;
+  right: 150px;
+  background-color: white;
+  height: 100%;
+}
+
+.logo{
+  margin-left:20%;
+}
+
+p{
+  inherits: pDiv;
+  font-weight: initial;
+  background-color: white;
+}
+
+
+.linkDiv{
+  margin: auto;
+  background-color: white;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.pDiv{
+  padding: 15px;
+  background-color: inherit;
+  text-align: center;
+  color:black;
+
+}
+
+.pDiv:hover{
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+@media (max-width: 600px){
+  img{
+    display: none;
+  }
+}

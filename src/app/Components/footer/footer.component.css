@@ -1,0 +1,32 @@
+*{
+    color:white;
+    background-color: rgb(36 35 35);
+}
+
+.InfoDiv{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#line{
+    width: 8%;
+    height: 4px;
+    background-color: #154c79;
+    margin: auto;
+    margin-top: 10px;
+}
+
+div > p{
+    margin-bottom: 5px;
+    font-weight: bold
+}
+
+h2{
+    font-weight: lighter
+}
+
+.createdBy{
+    background-color: white;
+}
+

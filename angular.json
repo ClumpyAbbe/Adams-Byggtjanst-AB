@@ -19,11 +19,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/assets/Bilder/Favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/fonts/customFont.css",
+              "node_modules/roboto-fontface/css/roboto/roboto-fontface.css"
             ],
             "scripts": []
           },
@@ -86,7 +88,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
+              "src/assets/Bilder/Favicon.ico",
               "src/assets"
             ],
             "styles": [

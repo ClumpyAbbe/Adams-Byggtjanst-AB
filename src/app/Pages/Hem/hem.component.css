@@ -1,0 +1,220 @@
+.pictureBox{
+    background-image: url("/assets/ex0.jpg");
+
+  /* Set a specific height */
+  min-height: 750px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+  width: 100%;
+  margin:auto;
+  background-color: white;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.area{
+    width:100%;
+    height:750px;
+}
+
+.area:hover >>> svg{
+    transition: 0.1s;
+    opacity: 1;
+    
+}
+
+.picture{
+    margin: auto;
+    width: 75%;
+    height: inherit;
+}
+
+.arrow{
+    position: absolute;
+    height: inherit;
+    width: 5%;
+    background-color: transparent;
+    cursor: pointer;
+    text-align:center;
+    height: 750px;
+    transition: 0.3s;
+}
+
+.arrow:hover{
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    transition: 0.0s;
+}
+
+.left-arrow{
+    left: 0;
+}
+
+.right-arrow{
+    right: 0;
+}
+
+
+svg {
+    background: transparent;
+    margin:auto;
+    margin-top: 180%;
+    opacity: 0;
+    transition: 0.3s;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(231deg) brightness(102%) contrast(101%);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.test{
+    height:1000px;background-color:white;font-size:36px
+}
+
+.row1 > h2{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+h3{
+    margin-top: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.flex-grid {
+    display: grid;
+  justify-content: center;
+  align-content: center;
+
+  gap: 5.5%;
+  grid-auto-flow: column;
+  margin-bottom: 25px;
+  }
+
+  .col{
+    text-align: center;
+    margin-left:50 px;
+  }
+  .col > p{
+    max-width: 300px;
+    text-align: left;
+    font-weight: initial;
+  }
+
+  span{
+    display:inline-block;
+    text-align: top !important;
+  }
+
+  .image{
+    flex-basis: 40%;
+    display:flex;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  .InfoDiv{
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+}
+
+#line{
+    width: 8%;
+    height: 2px;
+    background-color: #154c79;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#fullLine{
+    width: 100%;
+    height: 2px;
+    background-color: #154c79;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.text{
+    text-align: center; 
+    margin:auto;
+    max-width: 1280px;
+    padding: 2%;
+    margin-bottom: 0.5%;
+}
+
+.projectList{
+    margin: auto;
+    text-align: center;
+    
+}
+
+.box > p{
+    padding: 10px;
+}
+
+section{
+    margin-bottom: 25px;;
+}
+
+.box{
+
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.box:hover{
+    cursor:pointer;
+}
+
+.box:hover > div{
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.boxLine{
+    transition: 0.3s;
+    opacity: 0;
+    width: 75%;
+    height: 2px;
+    background-color: #154c79;
+    margin: auto;
+    position: 'relative';
+    top: '-10px';
+}
+
+.selectedProject{
+    display: inline-block;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 25px;;
+    width: 1200px;
+    height: 40em;
+    border: 3px solid #154c79;
+}
+
+.active{
+    opacity: 1;
+    width: 75%;
+    height: 2px;
+    background-color: #154c79;
+    margin: auto;
+    position: 'relative';
+    top: '-10px';
+}
