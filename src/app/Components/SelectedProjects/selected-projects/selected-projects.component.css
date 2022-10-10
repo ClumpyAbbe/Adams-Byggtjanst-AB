@@ -1,0 +1,166 @@
+.block-highlighted-example-projects-content{
+    margin-right: auto;
+    padding-left: 200px;
+    padding-top: 50px;
+    color: black ;
+    overflow: hidden;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+  }
+
+  li{
+
+    padding: 0 1.875rem 0 0;
+    color:#ffff;
+    /* background-color: grey; */
+    list-style-type: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+
+  .responsive-image{
+    width: 21.25rem;
+    height: 44.375rem;
+    min-height: auto;
+    /* margin: -0.3125rem; */
+    transition: -webkit-clip-path 600ms cubic-bezier(0.545, 0.695, 0.27, 1.005);
+    transition: clip-path 600ms cubic-bezier(0.545, 0.695, 0.27, 1.005);
+    transition: clip-path 600ms cubic-bezier(0.545, 0.695, 0.27, 1.005), -webkit-clip-path 600ms cubic-bezier(0.545, 0.695, 0.27, 1.005);
+    -webkit-clip-path: polygon(0.3125rem 0.3125rem, calc(100% - 0.3125rem) 0.3125rem, calc(100% - 0.3125rem) calc(100% - 0.3125rem), 0.3125rem calc(100% - 0.3125rem));
+    clip-path: polygon(0.3125rem 0.3125rem, calc(100% - 0.3125rem) 0.3125rem, calc(100% - 0.3125rem) calc(100% - 0.3125rem), 0.3125rem calc(100% - 0.3125rem));
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+
+  h2.highlighted-example-trips-summary__heading{
+    font-size: 2rem
+  }
+
+  h3.highlighted-example-trips-summary__headline{
+    
+
+    font-size: .75rem;
+  }
+
+  p.highlighted-example-trips-summary__description{
+    margin: 0;
+    max-width: 18.25rem;
+    margin: 0 0 3.75rem;
+    font-family: "Basetica Light",sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.48px;
+    line-height: 1.5rem;
+    color: #000;
+  }
+
+  .block-highlighted-example-projects{
+    width: 4080px; 
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+
+  @media only screen and (min-width: 600px) {
+    .not-wide{
+      display: none;
+    }
+
+    .position-text{
+      display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+       position: absolute;
+      bottom: 0;
+      padding-bottom: 2.835rem;
+      padding-left: 2.5rem; 
+      width: 44.375rem;
+      text-align: left;
+      font-family: "Basetica Medium",sans-serif;
+      
+      letter-spacing: .03em;
+      line-height: .75rem;
+      text-transform: uppercase;
+      margin: 0 0 0.9375rem;
+      font-family: "Basetica Medium",sans-serif;
+      text-transform: uppercase;
+      color: #000;
+    }
+
+    .not-small{
+        display: flex;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+
+    .block-highlighted-example-projects{
+        width: 40.375rem;
+    }
+    .not-wide{
+      display: flex;
+      align-items: center;
+     justify-content: center;
+    padding-top: 3rem;
+    }
+
+    .not-small{
+        display: none;
+    }
+
+    .block-highlighted-example-projects-content{
+      display: flex;
+    align-items:center;
+    background-color: #eee;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    overflow-x: scroll;
+    margin-bottom: 5rem;
+  }
+
+  .images {
+    display: flex;
+    align-items:center;
+    background-color: #eee;
+    padding: 1rem;
+    overflow-x: scroll;
+}
+
+.images > div {
+    flex: none;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.images img {
+    max-width:100%;
+    width: 100%;
+}
+}
+
+.knapp{
+    
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+
+
+}

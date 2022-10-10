@@ -3,13 +3,12 @@
   font-family: roboto;
   margin: 0;
   padding: 0;
-  background-color: white;
-  color:#333;
   }
 
   body{
     display:flex;
     flex-direction: column;
+
   }
 
 footer{
@@ -19,7 +18,5 @@ footer{
 }
 
 .content{
-  margin-top: 65px;
   min-height: 100vh;
-  background: white;
   }

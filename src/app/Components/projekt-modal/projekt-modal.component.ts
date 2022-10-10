@@ -1,26 +1,45 @@
-import { Component, Inject, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/compat/firestore';
-import { Observable } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
 import { Project, Tjanster } from 'src/app/model/interfaces';
 
 @Component({
-  selector: 'app-hem',
-  templateUrl: './hem.component.html',
-  styleUrls: ['./hem.component.css']
+  selector: 'app-projekt-modal',
+  templateUrl: './projekt-modal.component.html',
+  styleUrls: ['./projekt-modal.component.css']
 })
 
-export class HemComponent implements OnInit {
 
-  items: Observable<any>;
-  tjantser: Observable<any>;
-  constructor(private firestore: AngularFirestore, private modalService: NgbModal) {
-    this.items = firestore.collection("Projekt").valueChanges();
-    this.tjantser = firestore.collection("Tjanster").valueChanges();
+export class ProjektModalComponent implements OnInit {
+  constructor() {
   }
 
-  activeProject: Project;
-  projects: Project[];
+  ngOnInit(): void {
+  }
+
+  projektList: Project[] = [
+    {
+    Namn: "RENOVERING VILLA - RÅTORP",
+    Beskrivning: "Här renoverade vi alla ytskikt och bytte kök."
+    },
+    {
+      Namn: "b",
+      Beskrivning: "a"
+    },
+    {
+      Namn: "c",
+      Beskrivning: "a"
+    },
+    {
+      Namn: "d",
+      Beskrivning: "a"
+    },
+    {
+      Namn: "e",
+      Beskrivning: "a"
+    },
+    {
+      Namn: "f",
+      Beskrivning: "a"
+    }]
 
   tjansterList: Tjanster[] = [
     {
@@ -54,18 +73,15 @@ export class HemComponent implements OnInit {
     Image: ""
   }
 ]
-
-
-  ngOnInit(): void {
     
+  getTjanster(){
+    return this.tjansterList;
   }
 
-  openXl(position: Project, content) {
-    this.activeProject = position;
-    this.modalService.open(content);
+  getProjects(){
+    return this.projektList;
   }
 
   
 
 }
-

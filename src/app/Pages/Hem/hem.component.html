@@ -1,129 +1,111 @@
-<section class="area">
-    <div class="pictureBox" [ngStyle]="{'background-image': 'url(' + imageName + ')'}">
-        <div class="left-arrow arrow" (click)="nextPicture(1)">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" preserveAspectRatio="xMaxYMax">
-                <path
-                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
-            </svg>
-        </div>
-        <!-- <div class="picture">
-            <img alt="Angular Logo" [src]="image"/>
-        </div> -->
+<section>
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="https://images.pexels.com/photos/323772/pexels-photo-323772.jpeg" alt="Random second slide">
+      </div>
+      <div class="carousel-caption">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </ng-template>
 
-        <div class="right-arrow arrow" (click)="nextPicture(0)">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" preserveAspectRatio="xMaxYMax">
-                <path
-                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-            </svg>
-        </div>
-
-
-
-
-    </div>
+  </ngb-carousel>
 </section>
 
 
 <section>
-    <div class="InfoDiv">
-        <h2>Tjänster vi utför</h2>
-        <div id="line"></div>
-        
-    </div>
-    
-    <div class="flex-grid">
-        <div class="col">
-    
-                <h3><span>Nybyggnad</span></h3>
-            <p>
-                <span>
-                    Vi hjälper dig att förverkliga dina nya projekt, oavsett om det handlar om ett nytt lusthus, ett
-                    attefallshus, ett förråd eller ett garage. Du kan känna dig i trygga händer även när det kommer till el,
-                    måleri eller vs vi har duktiga samarbetspartners som vi gärna förmedlar kontakt med.
-                </span>
-            </p>
-        </div>
-        <div class="col">
-            
-                <h3><span>Utbyggnad</span></h3>
-            <p>
-                <span>Funderar du på att bygga ut ditt befintliga hus? Inga problem, ingen byggnad är det andra lik och vi
-                    bidrar gärna med vår erfarenhet för att hjälpa dig skapa det bästa resultatet efter dina
-                    förutsättningar.
-    
-                </span>
-            </p>
-        </div>
-        <div class="col">
-                <h3><span>Invändig renvovering</span></h3>
-            <p><span>Ska du lägga nytt golv, byta trappsteg, renovera dörrar eller kanske göra om rumsindelningen? Berätta
-                    om dina idéer så kan vi vara ditt bollplank och ta fram en lösning som passar just dig. Bara fantasin
-                    sätter begränsningen.
-    
-                </span></p>
-        </div>
-    </div>
-    <div class="flex-grid">
-        <div class="col">
-            <h3><span>Utvändig renovering</span></h3>
-            <p><span>När det börjar bli dags att se över husets utvändiga sida finns vi till hands. Vi fixar din
-                    fasadrenovering med alltifrån tak, panel till fönster och dörrar.
-    
-                </span></p>
-        </div>
-        <div class="col">
-            <h3><span>Altan & Uterum</span></h3>
-            <p><span>Önskar du en ny härlig altan? Eller kanske det där mysiga inglasade uterummet? Det spelar ingen roll om
-                    du vill bygga ditt projekt från grunden med lösvirke eller om du vill använda dig av färdiga moduler. Vi
-                    kan hjälpa dig att uppfylla drömmen på båda sätten.
-    
-                </span></p>
-        </div>
-        <div class="col">
-            <h3><span>Kök</span></h3>
-            <p><span>Eller hemmets hjärta. För många det viktigaste rummet i huset. Med en sådan betydelsefull plats är det
-                    extra viktigt att lägga tid på att komma fram till vad du verkligen vill ha. Men också vad som passar
-                    din budget. Vi diskuterar gärna olika möjligheter tillsammans med dig.
-    
-                </span></p>
-        </div>
-    </div>
-</section>
-<div id="fullLine"></div>
-<section>
-    <div class="row1">
-        <h2>Vilka är vi?</h2>
-        <div id="line"></div>
-    </div>
-    <div class="text">
-        <p>Anledningen till att FraJac finns är för att hjälpa dig skapa de byggprojekt du drömmer om (eller de där projekten som du kanske inte riktigt hinner med). Hantverket bakom ett riktigt lyckat snickarjobb är något som vi inte bara älskar utan också hyser stor respekt för. Tillsammans med dig, med utgångpunkt från dina idéer och önskemål bygger vi projekt som vi båda kan vara stolta över.
 
-        </p>
-        <p class="text">Vi håller koll på projektets olika delar från start till slut. Med vår mångåriga erfarenhet ser vi till att arbetet utförs både säkert och snyggt. Den tryggheten blir din. Och du, självklart uppfyller vi kraven för rotavdrag.</p>
-    </div>
-</section>
-<div id="fullLine"></div>
-<section>
-    <div class="row1">
-        <h2>Utvalda projekt</h2>
-        <div id="line"></div>
-    </div>
-    <div class="projectList">
-        <div class="box" (click)="chooseProject(project)"  *ngFor="let project of UtvaldaProjekt">
-            <p>
-                <span>{{project}}</span>
-            </p>
-            <div [ngClass]="{'active': activeProject === project,'boxLine': activeProject !== project}" class="boxLine"></div>
-        </div>
-    </div>
 
-    <div class="selectedProject">
-        <img [src]="projectPicture" alt="Flowers" style="width:800px;">
-        <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom sub-title">Tjänster vi utför</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start" *ngFor="let tjanst of tjansterList">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em">
+            <use xlink:href="#toggles2" />
+          </svg>
+        </div>
         <div>
-            Text content goes here
+          <div>
+            <h2>{{tjanst.Titel}}</h2>
+            <p>{{tjanst.Beskrivning}}</p>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+
+
+</section>
+<div id="fullLine"></div>
+<section>
+  <h2 class="pb-2 border-bottom sub-title">Vilka är vi?</h2>
+  <div class="text">
+    <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id ipsum sed ipsum malesuada scelerisque vitae non felis. Pellentesque varius nibh non nunc malesuada porttitor. Proin iaculis neque leo, ut molestie est egestas vel. Ut molestie eros nibh, at malesuada est molestie rhoncus. Fusce in velit eget velit volutpat euismod. In pretium consequat egestas. Nulla mollis, dolor ut ornare ultrices, metus nibh egestas enim, quis tristique.
+
+    </p>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lorem nisl, accumsan ut nisi ut, fringilla congue massa. Nunc non egestas augue, vel placerat diam. Mauris sit amet erat id mauris euismod ullamcorper. Mauris dui elit, iaculis.
+
+    </p>
+  </div>
+</section>
+<div id="fullLine"></div>
+<section style="background-color:#f1efec;height:auto">
+ <app-selected-projects></app-selected-projects>
 </section>
 
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <h2>{{activeProject.Namn}}</h2>
+    <div id="line"></div>
+    <p>{{activeProject.Beskrivning}}</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+  </div>
+</ng-template>
 
+
+
+<!-- <div class="container px-4 py-5" id="custom-cards" style="text-align:center;">
+        <h2 class="pb-2 border-bottom">Utvalda projekt</h2>
+      
+
+        <div class="row row-cols-3 row-cols-lg-3 align-items-stretch g-4 py-5" >
+          <div *ngFor="let project of items | async">
+            <div class="col projectcard" (click)="openXl(project,content)">
+              <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/assets/Bilder/HomepageSlides/0.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold pictureText">{{project.Namn}}</p>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                      <small>California</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                      <small>5d</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> -->
